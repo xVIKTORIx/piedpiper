@@ -14,6 +14,9 @@
        
         <nav>
           <div class='nav'>
+
+
+          
             <a href='#Problem' class="line">the problem </a>
             <a href='#PiedPiperCoin' class="line">PiedPiperCoin </a>
             <a href='#Team'>the team</a>
