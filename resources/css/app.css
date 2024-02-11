@@ -1,0 +1,212 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100%;
+    min-width: 1219px;
+}
+
+#Problem:before,
+#PiedPiperCoin:before,
+#Team:before,
+#logoimg:before {
+    display: block;
+    content: '';
+    height: 84px;
+    margin: -84px 0 0
+        /*не дает заголовку при переходе по ссылке 
+    скрываться под position: fixed;*/
+}
+
+header {
+    padding-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 84px;
+    background: #007765;
+    color: #fff;
+    /* border: 1px solid rgb(141, 7, 43);*/
+    text-align: center;
+}
+
+.logo img {
+    /*соединение двух чаcтей вектора лого*/
+    position: absolute;
+    /*top: 50%;
+    margin-top: -23px;*/
+    left: calc(50% - 600px);
+    padding-left: 55px;
+}
+
+
+.nav {
+    margin: auto;
+    padding-right: 55px;
+    width: 1219px;
+    /*border: 1px solid rgb(10, 114, 165);*/
+    display: flex;
+    /*параметры положения текста*/
+    align-items: center;
+    /*центрирует текст вертикально*/
+    justify-content: flex-end;
+    /*центрирует текст горизонтально*/
+}
+
+a {
+
+    color: inherit;
+    font-size: 24px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.line {
+    border-right: solid 1px;
+    padding: 5px 5px;
+    /*полоска справа*/
+}
+
+.greenfon1 {
+    height: 403px;
+    /*высота блока фиксирована*/
+    display: flex;
+    /*параметры положения текста*/
+    align-items: center;
+    /*центрирует текст вертикально*/
+    justify-content: center;
+    /*центрирует текст горизонтально*/
+    background: url(/public/img/image.png);
+    background-size: 100%;
+    color: #fff;
+    font-size: 72px;
+    font-family: Roboto, sans-serif;
+}
+
+.sec1 {
+    background: #EEEEEE;
+
+}
+
+h1 {
+    color: #037264;
+    font-size: 64px;
+    font-family: Roboto, sans-serif;
+    text-align: center;
+
+}
+
+p {
+    margin: auto;
+    width: 1219px;
+    padding: 0px 55px 70px 55px;
+    font-size: 32px;
+    line-height: 30pt;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu,
+        Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.section2 {
+    background: url(/public/img/image1.png);
+    background-size: 100%;
+    /*картинка будет видима вся, относительно контейнера*/
+    height: 483px;
+    display: flex;
+    /*параметры положения текста*/
+    align-items: center;
+    /*центрирует текст вертикально*/
+    justify-content: center;
+    /*центрирует текст горизонтально*/
+}
+
+.p2 {
+    /*текст на голубом фоне*/
+    padding-top: 70px;
+    color: #ffffff;
+    font-size: 48px;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+}
+
+.leftfoto {
+    /*параграф с картинкой, обтекание слева*/
+    margin-right: 55px;
+    float: left;
+
+}
+
+.Team {
+    background: #EEEEEE;
+}
+
+.team1 {
+    text-align: center;
+    margin: 100px auto auto;
+    width: 1219px;
+
+    /* width: 40%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;*/
+
+}
+
+.block1 {
+    width: 350px;
+    height: 283px;
+    display: inline-block;
+    text-align: center;
+
+}
+
+
+.p4 {
+
+    color: #007765;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+
+}
+
+.p5 {
+
+    color: black;
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+footer {
+    width: 100%;
+    margin: auto;
+    padding-bottom: 55px;
+    padding-top: 55px;
+    background: #333333;
+    display: flex;
+    /*параметры положения текста*/
+    align-items: center;
+    /*центрирует текст вертикально*/
+    justify-content: center;
+    /*центрирует текст горизонтально*/
+
+
+}
+
+.p7 {
+    color: #FFFFFF;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    text-align: center;
+
+
+
+}
