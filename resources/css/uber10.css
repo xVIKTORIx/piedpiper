@@ -1,0 +1,253 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.container {
+    padding: 0px 0px;
+    /*border: 1px solid rgb(211, 231, 33);*/
+}
+
+.box-shadow {
+    height: 72px;
+    /*border: 1px solid rgb(207, 25, 153);*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 6px 7px -4px rgba(83, 83, 83, 0.2);
+}
+
+
+h1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+
+}
+
+.logocolor {
+    color: #57AD56;
+
+}
+
+.container1 {
+    /*создан внутри container для расположения элемента справа;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.containerRight {
+
+    /*border: 1px solid rgb(218, 128, 12);*/
+    display: flex;
+    /*параметры положения текста*/
+    align-items: center;
+    /*центрирует текст вертикально*/
+    justify-content: flex-end;
+    /*центрирует текст горизонтально*/
+}
+
+
+.button {
+    background: bottom;
+    width: 78px;
+    height: 40px;
+    border: 1px solid rgb(153, 154, 155);
+    border-radius: 2px;
+
+}
+
+.kor {
+    margin-left: 20px;
+}
+
+@media screen and (max-width:380px) {
+    .kor {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .container,
+    .box-shadow {
+        padding: 0px 5px;
+        margin: 0px 0px;
+    }
+}
+
+
+
+footer {
+    position: relative;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.down {
+    /*border: 1px solid rgb(207, 25, 153);*/
+    box-shadow: 0 6px 7px -4px rgba(83, 83, 83, 0.2);
+    background: #262626;
+}
+
+h5 {
+    color: cornsilk;
+    font-size: 19px;
+    border-bottom: 1px solid #afabab;
+    padding: 45px 0px;
+    /*border: 1px solid rgb(207, 25, 153);*/
+
+}
+
+.language {
+
+    width: 227px;
+}
+
+.dropbtn {
+    padding: 5px;
+    cursor: pointer;
+    width: 227px;
+    height: 40px;
+    /*border: 1px solid rgb(207, 25, 153);*/
+    color: #f1f1f1;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    background: #3B3B3B;
+
+}
+
+
+.language-content {
+    display: none;
+    /*прячет строки выбора*/
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 227px;
+}
+
+.p2 {
+    font-size: 13px;
+}
+
+.dropbtn::after {
+    background: rgba(0, 0, 0, 0) url("https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-16.png") no-repeat scroll center center;
+    content: "";
+    height: 16px;
+    position: absolute;
+    right: 0;
+    top: 7px;
+    width: 16px;
+}
+
+.language-content a:first-child {
+    /*ссылка на флаги стран*/
+    background: url('http://icons.iconarchive.com/icons/custom-icon-design/flag-3/16/Russia-Flag-icon.png') no-repeat left center;
+}
+
+.language-content a:last-child {
+    /*ссылка на флаги стран*/
+    background: url('https://icons.iconarchive.com/icons/fatcow/farm-fresh/16/flag-usa-icon.png') no-repeat left center;
+}
+
+/* строки выпадают блоками один над другим */
+.language-content a {
+    color: rgb(207, 197, 197);
+    padding: 2px 0 2px 25px;
+    /*25 px отступ от картинки в стороке списка*/
+    text-decoration: none;
+    display: block;
+}
+
+/* подсвечивает цвет строки списка */
+.language-content a:hover {
+    background-color: #aef3f0
+}
+
+/* показывает скрытый список*/
+.language:hover .language-content {
+    display: block;
+}
+
+.logocolor2 {
+    color: #57AD56;
+}
+
+h6 {
+    color: #f1f1f1;
+    font-size: 16px;
+}
+
+
+.p3 {
+    font-size: 13px;
+    color: #f1f1f1;
+}
+
+.language {
+    padding-bottom: 10px;
+}
+
+.blockfooter1 {
+    margin-top: 41px;
+    padding-bottom: 21px;
+    border-bottom: 1px solid #afabab;
+}
+
+.blockfooter12 {
+    margin: 21px 0px;
+}
+
+.blockfooter2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #afabab;
+
+}
+
+.blockfooter3 {
+
+    margin-top: 41px;
+    padding-bottom: 21px;
+
+}
+
+.row {
+    position: relative;
+}
+
+.container2 {
+    position: absolute;
+    /*в контейнере кнопка наверх*/
+    bottom: 0px;
+    width: 100%;
+    /*border: 1px solid rgb(25, 189, 218);*/
+    display: flex;
+    justify-content: flex-end;
+}
+
+#TOP:before {
+    display: block;
+    content: '';
+    height: 84px;
+    margin: -84px 0 0
+        /*не дает заголовку при переходе по ссылке 
+    скрываться под position: fixed;*/
+}
+
+.button-right {
+    /* border: 1px solid rgb(211, 231, 33);*/
+    left: 0px;
+    background: #57AD56;
+    width: 80px;
+    height: 80px;
+}

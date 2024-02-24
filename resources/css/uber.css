@@ -1,0 +1,406 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.container {
+    padding: 0px 0px;
+    /*border: 1px solid rgb(211, 231, 33);*/
+}
+
+.box-shadow {
+    height: 72px;
+    /*border: 1px solid rgb(207, 25, 153);*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 6px 7px -4px rgba(83, 83, 83, 0.2);
+}
+
+
+h1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+
+}
+
+.logocolor {
+    color: #57AD56;
+
+}
+
+.container1 {
+    /*создан внутри container для расположения элемента справа;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.containerRight {
+
+    /*border: 1px solid rgb(218, 128, 12);*/
+    display: flex;
+    /*параметры положения текста*/
+    align-items: center;
+    /*центрирует текст вертикально*/
+    justify-content: flex-end;
+    /*центрирует текст горизонтально*/
+}
+
+
+.button {
+    background: bottom;
+    width: 78px;
+    height: 40px;
+    border: 1px solid rgb(153, 154, 155);
+    border-radius: 2px;
+    margin-right: 4px;
+
+}
+
+.button:hover {
+    background-color: rgb(151, 199, 151);
+}
+
+.kor {
+    margin-left: 16px;
+
+}
+
+@media screen and (max-width:380px) {
+    .kor {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .container,
+    .box-shadow {
+        padding: 0px 5px;
+        margin: 0px 0px;
+    }
+}
+
+h2 {
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #626262;
+    margin-right: 30px;
+}
+
+.h2 {
+    margin: 56px 0px 0px 0px;
+    box-shadow: 0 6px 0px -4px rgba(83, 83, 83, 0.2);
+    width: inherit;
+}
+
+h3 {
+    font-size: 22px;
+    margin: 56px 0px 20px 0px;
+}
+
+footer {
+    position: relative;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.down {
+    /*border: 1px solid rgb(207, 25, 153);*/
+    box-shadow: 0 6px 7px -4px rgba(83, 83, 83, 0.2);
+    background: #262626;
+}
+
+h5 {
+    color: cornsilk;
+    font-size: 19px;
+    border-bottom: 1px solid #afabab;
+    padding: 45px 0px;
+    /*border: 1px solid rgb(207, 25, 153);*/
+
+}
+
+.language {
+    height: 35px;
+    width: inherit;
+    background: #3B3B3B;
+    color: #fffefe;
+    border: none;
+    padding-left: 35px;
+    padding-top: 5px;
+    cursor: pointer;
+
+}
+
+.select-wrapper {
+    width: 227px;
+    position: relative;
+}
+
+.select-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    display: block;
+    width: 13px;
+    height: 13px;
+    background-color: rgb(241, 233, 233);
+    mask-image: url(/public/img/UBER/world.png);
+    mask-size: 13px;
+
+
+
+}
+
+
+.logocolor2 {
+    color: #57AD56;
+}
+
+h6 {
+    color: #f1f1f1;
+    font-size: 16px;
+}
+
+
+.p3 {
+    font-size: 13px;
+    color: #f1f1f1;
+}
+
+.language {
+    padding-bottom: 10px;
+}
+
+.blockfooter1 {
+    margin-top: 41px;
+    padding-bottom: 21px;
+    border-bottom: 1px solid #afabab;
+}
+
+.blockfooter12 {
+    margin: 21px 0px;
+}
+
+.blockfooter2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #afabab;
+
+}
+
+.blockfooter3 {
+    margin-top: 41px;
+    padding-bottom: 21px;
+    padding-right: 5px;
+
+}
+
+.row {
+    position: relative;
+}
+
+.container2 {
+    position: absolute;
+    /*в контейнере кнопка наверх*/
+    bottom: 0px;
+    width: 100%;
+    /*border: 1px solid rgb(25, 189, 218);*/
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+/*#TOP:before {
+    display: block;
+    content: '';
+    height: 84px;
+    margin: -84px 0 0
+    //не дает заголовку при переходе по ссылке скрываться под position: fixed;
+}*/
+
+.button-right {
+    /* border: 1px solid rgb(211, 231, 33);*/
+    left: 0px;
+    background: #57AD56;
+    width: 80px;
+    height: 80px;
+    margin-right: 12px;
+}
+
+
+
+.windWhapper {
+    position: relative;
+    height: 364px;
+}
+
+.restaurant {
+    position: absolute;
+    margin: 80px 0px;
+    background: #fffefe;
+    width: 389px;
+    height: 204px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px 30px;
+}
+
+.rect1 {
+    font-size: 36px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.blockOval {
+    background: #262626;
+    height: 32px;
+    width: 100px;
+    border-radius: 20px;
+}
+
+.time {
+    margin: 5px 15px;
+    font-size: 13px;
+    color: #f1f1f1;
+}
+
+.wrapper {
+    width: inherit;
+    height: inherit;
+    /* размеры родительского контейнера windWhapper*/
+    background-size: cover;
+    background-position: center;
+    background-image: url('/public/img/UBER/photo10.png');
+    /* можно начать писать ссылку через"/"*/
+}
+
+
+.menuTop {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #626262;
+    padding: 27px 0px 25px 0px;
+
+    width: inherit;
+}
+
+.block {
+    height: 160px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgb(196, 194, 194);
+    margin-bottom: 50px;
+}
+
+
+h4 {
+    font-size: 16px;
+}
+
+.inblock {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 7px;
+}
+
+
+b {
+    font-size: 15px;
+}
+
+@media screen and (max-width:391px) {
+
+    .container {
+        margin: 0px 3px;
+
+        /*border: 1px solid rgb(211, 231, 33);*/
+    }
+
+    .windWhapper {
+        width: inherit;
+        height: 255px;
+        text-align: center;
+    }
+
+    .containerCENTER {
+        width: inherit;
+        display: flex;
+        border: 1px solid rgb(231, 33, 165);
+    }
+
+    .restaurant {
+        margin-left: 6%;
+        width: 308px;
+        height: 180px;
+        margin-top: 127px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .rect1 {
+        font-size: 24px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .block {
+        height: 102px;
+        margin-bottom: 10px;
+        border: none;
+        border-bottom: 1px solid rgb(196, 194, 194);
+
+    }
+
+    h4 {
+        width: 225px;
+        white-space: nowrap;
+        /* Текст не переносится */
+        overflow: hidden;
+        /* Обрезаем всё за пределами блока */
+        text-overflow: ellipsis;
+        /* Добавляем многоточие */
+    }
+
+    .box-shadow {
+        display: none;
+    }
+
+    h3 {
+        width: inherit;
+        text-align: center;
+        padding-top: 20px;
+
+    }
+
+    .select-wrapper::before {
+        content: "";
+        position: absolute;
+        height: 13px;
+        width: 6px;
+        top: 10px;
+        left: 15px;
+        display: block;
+        mask-image: url(/public/img/UBER/Shape.png);
+        mask-size: 7px;
+
+    }
+
+    .select-wrapper {
+        width: 176px;
+    }
+
+}

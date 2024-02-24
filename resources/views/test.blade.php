@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Тест</title>
-    @vite(['resources/css/app.css'])
+    @vite(['resources/css/test.css'])
       </head>
 <body> <a id='logoimg'></a>
     <header ><!--фиксированная полоса-->
@@ -11,13 +11,12 @@
             <img src='img/Vector.png' title='logo' height=45px;>
             <img src='img/Vector1.png' title='logo' height=45px;>
         </div><!--вектор на полосе-->
-       
+    
         <nav>
-          <div class='nav'>
             <a href='#Problem' class="line">the problem </a>
             <a href='#PiedPiperCoin' class="line">PiedPiperCoin </a>
             <a href='#Team'>the team</a>
-          </div>
+
         </nav> 
     </header><!--фиксированная полоса-->
 
@@ -27,7 +26,7 @@
 
   <section><!--бежевый фон, вторая секция.--> 
     <div class='sec1' >
-        <h1><a id='Problem'></a>The Problem</h1>
+        <h1 class=header-a id='Problem'>The Problem</h1>
         <br>
         <p> 
           Beneath the flashy homepages of your favorite sites lurk Hooli™ and other evil corporations out to hoard and sell your most personal data.
@@ -57,10 +56,9 @@
   </div>
 </section><!--голубой фон, третья секция--> 
 
-
+<div id='PiedPiperCoin'></div>
   <section><!--белый фон, четвертая секция--> 
-  <h1>
-    <br><a id='PiedPiperCoin'></a>
+  <h1 class=header-a>
   Introducing PiedPiperCoin
   </h1>
   <br>
@@ -77,7 +75,7 @@
 
   <section>
   <div class='Team'>
-  <h1><br><a id='Team'></a>The Team</h1>
+  <h1 class=header-a><br><a id='Team'></a>The Team</h1>
   <div class='team1'><!--бежевый фон, пятая секция-команда--> 
       <div class='block1'>
       <figure>

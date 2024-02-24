@@ -13,15 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
+Route::get('/uber', function () {
+    return view('pages.uber');
 });
 
-Route::get('/contacts', function () {
-    return view('contacts');
+Route::get('/products', function () {
+    return view('pages.products');
 });
 
 Route::get('/test', function () {
-    return view('test');
+    return view('pages.test');
 });
 
