@@ -1,9 +1,9 @@
 <footer>
     <div class='down'>
-        <div class='container'>
-            <div class='h5'>
+        <div class='container' style="padding: 0px 5px">
+            <div>
                 <h5>
-                UBER <span class='logocolor'>EATS</span> 
+                UBER <span class='logocolor2'>EATS</span> 
                 </h5>
             </div>
             <div class='blockfooter1'>
@@ -19,9 +19,9 @@
                                                 <div class= 'blockfooter12'>
                                                     <h6><span class='logocolor2'>#</span>UberEats </h6>
                                                     <div>
-                                                    <img src="img/UBER/facebook.png" style="margin: 4px" alt="facebook" width=18x>
-                                                    <img src="img/UBER/twitter.png" style="margin: 4px" alt="twitter" width=18x>
-                                                    <img src="img/UBER/instagram.png" style="margin: 4px" alt="instagram" width=18x>
+                                                    <img src="img/UBER/facebook.png" style="margin: 4px" alt="facebook" width=18>
+                                                    <img src="img/UBER/twitter.png" style="margin: 4px" alt="twitter" width=18>
+                                                    <img src="img/UBER/instagram.png" style="margin: 4px" alt="instagram" width=18>
                                                     </div>
                                                 </div>
                                             </div>  
@@ -41,8 +41,8 @@
                                         </div>
                                     </div> 
                                     <div class='blockfooter2'> 
-                                        <img src="img/UBER/AppStore.png" style="margin: 40px 20px"alt="AppStore" height=40px>
-                                        <img src="img/UBER/GooglePlay.png" style="margin: 40px 20px" alt="GooglePlay" height=40px>    
+                                        <img src="img/UBER/AppStore.png" style="margin: 40px 20px" alt="AppStore" height=40>
+                                        <img src="img/UBER/GooglePlay.png" style="margin: 40px 20px" alt="GooglePlay" height=40>    
                                     </div> 
                                 <div class='blockButton'>  
                                         <nav class='blockfooter3'>
@@ -60,14 +60,12 @@
                                                     <div class="button-right">
                                                         <!-- ссылка наверх-картинка заворачивается в <a> -->
                                                     <a href="#TOP">
-                                                    <img src="img/UBER/Shape2.png" style="margin: 20px 27px "alt="Shape1" height=40px></a>
+                                                    <img src="img/UBER/Shape2.png" style="margin: 20px 27px " alt="Shape1" height=40></a>
                                                     </div>
                                                 </div>
                                             </div>                          
                                         </nav>
                                 </div>
-                        </div>
-                </div>
-                </div>
+                        </div>                
             </div>
 </footer>

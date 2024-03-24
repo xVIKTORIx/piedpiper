@@ -9,6 +9,7 @@
 .container {
     padding: 0px 0px;
     /*border: 1px solid rgb(211, 231, 33);*/
+    position: relative;
 }
 
 .box-shadow {
@@ -20,17 +21,30 @@
     box-shadow: 0 6px 7px -4px rgba(83, 83, 83, 0.2);
 }
 
+.box-shadow2 {
+    height: 72px;
+    /*border: 1px solid rgb(207, 25, 153);*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 6px 7px -4px rgba(83, 83, 83, 0.2);
+}
+
+
 
 h1 {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 12px;
+    font-size: 24px;
 
 }
 
 .logocolor {
     color: #57AD56;
+    font-size: 24px;
+    font-weight: 1000;
 
 }
+
 
 .container1 {
     /*создан внутри container для расположения элемента справа;*/
@@ -53,29 +67,57 @@ h1 {
 
 
 .button {
-    background: bottom;
     width: 78px;
     height: 40px;
     border: 1px solid rgb(153, 154, 155);
     border-radius: 2px;
     margin-right: 4px;
-
+    background: linear-gradient(1000deg, #f1f1f1, #787a78);
 }
 
 .button:hover {
-    background-color: rgb(151, 199, 151);
+    background: linear-gradient(-1000deg, #f1f1f1, #27804f);
+    animation: flip__1 1s;
 }
 
-.kor {
-    margin-left: 16px;
+@keyframes flip__1 {
 
-}
+    0%,
+    100% {
+        transform: rotateX(0);
+    }
 
-@media screen and (max-width:380px) {
-    .kor {
-        display: none;
+    50% {
+        transform: rotateX(-50deg);
     }
 }
+
+
+.box-shadow__button {
+    background-color: transparent;
+    /*убираем фон*/
+    border: none;
+    /*убираем границы кнопки*/
+    margin-left: 16px;
+}
+
+.box-shadow__button:hover {
+    animation: flip 1s;
+    /* Название и время анимации */
+}
+
+@keyframes flip {
+
+    0%,
+    100% {
+        transform: rotateX(0);
+    }
+
+    50% {
+        transform: rotateX(-180deg);
+    }
+}
+
 
 @media (max-width: 767px) {
 
@@ -83,20 +125,31 @@ h1 {
     .box-shadow {
         padding: 0px 5px;
         margin: 0px 0px;
+        position: relative;
     }
 }
 
-h2 {
+span {
     font-size: 16px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #626262;
     margin-right: 30px;
 }
 
-.h2 {
+.form__input {
     margin: 56px 0px 0px 0px;
+    background-color: transparent;
+    /*убираем фон*/
+    border: none;
+    /*убираем границы кнопки*/
     box-shadow: 0 6px 0px -4px rgba(83, 83, 83, 0.2);
     width: inherit;
+}
+
+.form__input:focus {
+    outline: none;
+    /*убираем границы поля поиска при нажатии*/
+    color: rgb(100, 100, 100);
 }
 
 h3 {
@@ -109,9 +162,17 @@ footer {
 }
 
 a {
-    color: inherit;
     text-decoration: none;
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #626262;
+    font-weight: 500;
 }
+
+a:focus {
+    color: green;
+}
+
 
 .down {
     /*border: 1px solid rgb(207, 25, 153);*/
@@ -126,6 +187,12 @@ h5 {
     padding: 45px 0px;
     /*border: 1px solid rgb(207, 25, 153);*/
 
+}
+
+.logocolor2 {
+    font-size: 19px;
+    margin: 0;
+    font-weight: 1000;
 }
 
 .language {
@@ -156,14 +223,6 @@ h5 {
     background-color: rgb(241, 233, 233);
     mask-image: url(/public/img/UBER/world.png);
     mask-size: 13px;
-
-
-
-}
-
-
-.logocolor2 {
-    color: #57AD56;
 }
 
 h6 {
@@ -206,6 +265,12 @@ h6 {
 
 }
 
+
+.col-sm-12 .col-md-6 .col-xl-4 {
+    text-align: center;
+
+}
+
 .row {
     position: relative;
 }
@@ -239,17 +304,37 @@ h6 {
     margin-right: 12px;
 }
 
+.row {
 
-
-.windWhapper {
     position: relative;
-    height: 364px;
+    height: 1500px;
+    width: 100%;
 }
 
+.col-sm-12 .col-md-6 .col-xl-4 {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.card__restaurant {
+    transition: transform 1s;
+    /* Animation */
+}
+
+.card__restaurant:hover {
+    z-index: 1;
+    border: 1px solid rgb(187, 187, 186);
+    background: #f1f1f1;
+    transform: scale(1.05);
+
+}
+
+
 .restaurant {
-    position: absolute;
+
     margin: 80px 0px;
-    background: #fffefe;
+    background: rgba(252, 251, 251, 0.9);
     width: 389px;
     height: 204px;
     display: flex;
@@ -257,6 +342,7 @@ h6 {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 15px 30px;
+    box-shadow: rgba(91, 96, 99, 0.3) 0px 1px 2px 0px, rgba(105, 111, 116, 0.15) 0px 2px 6px 2px;
 }
 
 .rect1 {
@@ -277,26 +363,28 @@ h6 {
     color: #f1f1f1;
 }
 
-.wrapper {
+/*.wrapper {
     width: inherit;
     height: inherit;
     /* размеры родительского контейнера windWhapper*/
-    background-size: cover;
-    background-position: center;
-    background-image: url('/public/img/UBER/photo10.png');
-    /* можно начать писать ссылку через"/"*/
-}
+/*background-size: cover;
+background-position: center;
+background-image: url('/public/img/UBER/photo10.png');*/
 
 
-.menuTop {
+
+
+.menuTop__list {
     display: flex;
-    flex-wrap: wrap;
+    text-align: center;
+    gap: 50px;
+    list-style-type: none;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #626262;
-    padding: 27px 0px 25px 0px;
-
-    width: inherit;
+    padding: 40px 0px 25px 0px;
 }
+
+
 
 .block {
     height: 160px;
@@ -323,18 +411,32 @@ b {
     font-size: 15px;
 }
 
-@media screen and (max-width:391px) {
+
+@media screen and (max-width:800px) {
 
     .container {
         margin: 0px 3px;
-
         /*border: 1px solid rgb(211, 231, 33);*/
     }
 
-    .windWhapper {
-        width: inherit;
-        height: 255px;
-        text-align: center;
+}
+
+
+@media screen and (max-width:500px) {
+    .kor {
+        display: none;
+    }
+
+    .container {
+        margin: 0px 0px;
+        padding: 0;
+        /*border: 1px solid rgb(211, 231, 33);*/
+    }
+
+    .menuTop,
+    .menuTop__list,
+    .box-shadow2 {
+        display: none;
     }
 
     .containerCENTER {
@@ -343,13 +445,25 @@ b {
         border: 1px solid rgb(231, 33, 165);
     }
 
+    .windWhapper {
+        position: relative;
+    }
+
     .restaurant {
-        margin-left: 6%;
         width: 308px;
         height: 180px;
-        margin-top: 127px;
+        margin-top: 230px;
+        /*ниже выравнивание по цетру*/
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 1;
+        transform: translate(-50%, -50%);
+        /*object-fit: cover;*/
+        /*если в ставляем картинку и хотим, чтобы она не растягивалась*/
         display: flex;
         flex-direction: column;
+
     }
 
     .rect1 {
@@ -359,10 +473,17 @@ b {
 
     .block {
         height: 102px;
-        margin-bottom: 10px;
+        margin-top: 10px;
+        margin-bottom: 0;
         border: none;
         border-bottom: 1px solid rgb(196, 194, 194);
 
+    }
+
+
+
+    picture {
+        height: 255px;
     }
 
     h4 {
@@ -375,15 +496,11 @@ b {
         /* Добавляем многоточие */
     }
 
-    .box-shadow {
-        display: none;
-    }
-
     h3 {
+        margin-top: 120px;
+        margin-bottom: 50px;
         width: inherit;
         text-align: center;
-        padding-top: 20px;
-
     }
 
     .select-wrapper::before {
@@ -396,11 +513,22 @@ b {
         display: block;
         mask-image: url(/public/img/UBER/Shape.png);
         mask-size: 7px;
-
     }
 
     .select-wrapper {
         width: 176px;
+    }
+
+    .underline {
+        position: absolute;
+        width: 50px;
+        height: 1px;
+        border: 1px solid #757575;
+        margin-top: 30px;
+        top: 50%;
+        left: 50%;
+        z-index: 1;
+        transform: translate(-50%, -50%);
     }
 
 }

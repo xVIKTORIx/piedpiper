@@ -14,7 +14,6 @@
             
             <b>{{ $product['price'] ?? 'не указана'}}</b>
         </div>                                                            
-        <img src="{{ $product['img'] ?? 'img/UBER/twitter.png'}}" alt="{{ $product['name'] ?? 'нет имени'}}" max-widtx=100%
-        height=100%>
+        <img src="{{ $product['img'] ?? 'img/image.jpg'}}"  alt="{{ $product['name'] ?? 'нет имени'}}">
     </div>    
 </div>
